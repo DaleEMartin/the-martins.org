@@ -43,7 +43,23 @@
       width: 100%;
       max-width: 40rem;
       margin: 0 auto;
-      padding: 4rem 1rem 2rem;
+      padding: 2.5rem 1rem 2rem;
+    }
+    .banner {
+      display: block;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 8;
+      object-fit: cover;
+      object-position: 50% 35%;
+      filter: sepia(0.3);
     }
     h1 {
       margin: 0;
@@ -94,6 +110,13 @@
 </head>
 <body>
   <main>
+    <a class="banner" href="https://dalemartin.photos">
+      <img src="img/banjo-1280.jpg"
+           srcset="img/banjo-640.jpg 640w, img/banjo-1280.jpg 1280w"
+           sizes="(max-width: 40rem) 100vw, 40rem"
+           width="1280" height="959"
+           alt="Black-and-white concert photo: a banjo player on stage, arm raised in the stage haze">
+    </a>
     <h1>The Martins</h1>
     <div class="rule"></div>
     <p class="tagline">Dale Martin on the web.</p>
